@@ -1,0 +1,19 @@
+@import "menu";
+@import "consultation";
+@import "news";
+@import "footer";
+@import "media";
+@import "node_modules/slick-carousel/slick/slick.scss";
+@import "node_modules/slick-carousel/slick/slick-theme.scss";
+*{
+    font-family:'Ubuntu', sans-serif;
+}
+footer{
+	height: 163px;
+  background-color: #211F2B;;
+	a{
+		&:hover{ 
+      color:red
+      }
+    }
+}

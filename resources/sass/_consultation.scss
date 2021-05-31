@@ -1,0 +1,57 @@
+.title{
+    font-size: 30px;
+    font-weight: 700;
+    text-align: center;
+    text-transform: uppercase;
+    &_left{
+        color: #FFFFFF;
+        font-weight: 900;
+        font-size: 40px;
+        line-height: 46px;
+        text-align: left;
+      }
+}
+.consultation{
+  min-height: 507px;
+  padding: 100px 0 92px 0;
+  background: url(/assets/Rectangle.png) center (center/cover) no-repeat;
+  &__descr{
+      color: #ffffff;
+      font-weight: 400;
+      font-size: 18px;
+      line-height: 24px;
+  }
+}
+.feed-form{
+    margin-top: 33px;
+    display: flex;
+    width: 450px;
+    input{
+        height: 51px;
+        width: 217px;
+        background-color: #ffffff;
+        margin-bottom: 15px;
+        border: none;
+        padding: 0 20px;
+        color: #4b4b4b;
+        font-size: 14px;
+        font-weight: 300; 
+    }
+}
+.button{
+    background-color: red;
+    width: 214px;
+    height: 51px;
+    color: #ffffff;
+    font-weight: 400;
+    font-size: 12px;
+    border: none;
+    cursor: pointer;
+    &_submit{
+        width: 100%;
+        height: 50px;
+        font-size: 16px;
+        margin-left: 17px;
+        color: #ffffff;
+    }
+}

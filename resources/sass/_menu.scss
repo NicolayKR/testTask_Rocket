@@ -1,0 +1,120 @@
+header{
+    position: relative;
+    height: 74px;
+    img{
+      padding-top: 11px;
+    }
+  }
+  nav{
+    height: 50px;
+  }
+  .hamburger{
+      display: none;
+      z-index: 6;
+  }
+  .menu{
+    display: flex;
+    justify-content: space-between;
+    padding-top: 28px;
+    padding-left: 4px;
+    padding-right: 50px;
+    margin: 0;
+    list-style-type: none;
+    z-index: 5;
+  }
+  .menu_link{
+      color: #2B2B2B;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 18px;
+    text-decoration: none; 
+    &:hover{ 
+      color:red
+      }
+  }
+  .menu_item{
+      padding-right: 28px;
+  }
+  .number_block{
+      padding-top: 19px;
+      font-size: 16px;
+      line-height: 18px;
+      text-align: right;
+      flex-direction: column;
+  }
+  .subheader_call{
+    color: #2B2B2B;
+    margin-top: 5px;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 16px;
+  }
+  .subheader_phone{
+      display: block;
+      color: #2B2B2B;
+      text-transform: uppercase;
+      font-weight: bold;
+    font-size: 16px;
+    line-height: 18px;
+    text-decoration: none; 
+    &:hover{ 
+      color:red
+      }
+  }
+  .menu-2{
+    position: fixed ;
+    top: 0 ;
+    right: -100%;
+    width: 100%;
+    height: 100vh;
+    flex-direction: column;
+    background-color:white;
+    justify-content: center;
+    align-items: center;
+    transition: 0.7s all;
+    z-index: 5;
+    &_footer{
+      background-color: black;
+      width: 100vw;
+      height: 53vh;
+        &_subheader{
+          padding-top: 36px;
+          font-weight: 400;
+          font-size: 20px;
+          line-height: 18px;
+          color:white;
+          padding-left: 20px;
+        }
+        &_phone{
+          margin-top: 25px;
+          font-weight: 900;
+          font-size: 24px;
+          line-height: 23px;
+          color:white;
+          padding-left: 20px;
+          
+        }
+    }
+    &-ul{
+      padding: 110px 20px;
+      list-style-type:none;
+    }
+    &_active{
+        right: 0;
+        overflow: hidden;
+    }
+    &_item{
+        padding-right: 0;
+        border: none;
+        margin: 10px;
+    } 
+    &_link{
+        font-size: 25px;
+        color:black;
+        line-height: 60px;
+        text-decoration: none;
+        &:hover{
+          color: red;
+        }
+    }
+  }
