@@ -1,5 +1,8 @@
 <template>
     <div class="wrapper">
+        <div v-if="flagError">
+            <b-alert show variant="danger" class=error__block>Соединение с бд не установлено!</b-alert>   
+        </div>
         <div class="redCube"></div>
         <div class="fioCube"></div>
         <div class="slider_wrapper">
@@ -20,6 +23,7 @@ export default {
     data(){
         return{
             slider_data:[],
+            flagError: false,
             options:{
                 autoplay: false,
                 transition: "slide",
@@ -59,13 +63,11 @@ export default {
         async update() {
             try{
             const response = await axios.get('/getNews')  
-                console.log(response);
                 this.slider_data = response.data;
-                console.log(slider_data);
-                this.flagData = true;
+                this.flagError = false;
                 }
                 catch{
-                    
+                    this.flagError = true;
                 }                
         }
     }
@@ -111,5 +113,9 @@ export default {
     right: 0;
     z-index: -2;
 }
-
+.error__block{
+    margin-top: 30px;
+    text-align: center;
+    font-weight: 600;
+}
 </style>

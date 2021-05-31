@@ -25,6 +25,7 @@
         "vue-template-compiler": "^2.6.12"
     },
     "dependencies": {
+        "bootstrap-vue": "^2.21.2",
         "dateformat": "^4.5.1",
         "node-sass": "^6.0.0",
         "slither-slider": "^2.9.0",
