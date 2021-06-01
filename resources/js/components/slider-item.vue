@@ -26,13 +26,14 @@ export default {
 
 <style lang="scss" scoped>
 .item_wrapp{
-    min-width: 349px;
-    min-height: 243px;
+    max-width: 349px;
+    height: 243px;
     border: 1px solid #D8D8D8;
     box-sizing: border-box;
     background-color: white;
     margin-left: 32px;
     z-index: 1;
+    
     &:nth-child(1){
         margin-left: 0px;
         }
@@ -70,6 +71,17 @@ export default {
         &:hover{
             color:red;
         }
+    }
+}
+@media ( max-width: 990px ){
+    .item_wrapp{
+        width: 316px;
+    }
+}
+@media ( max-width: 375px ){
+    .item_wrapp{
+        width: 300px;
+        min-height: 243;
     }
 }
 </style>

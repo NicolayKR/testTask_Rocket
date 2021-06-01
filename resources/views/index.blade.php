@@ -7,7 +7,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@300&display=swap" rel="stylesheet">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
-    <link rel="stylesheet" href="../css/app.css">
+    <link rel="stylesheet" href="css/app.css">
     <title>testTask</title>
 </head>
 <body>
@@ -16,10 +16,10 @@
             <header>
                 <div class="container">
                     <div class="row">
-                        <div class="col-1">
+                        <div class="col-lg-1 col-sm-1 col-2">
                             <a href="#"><img src="assets/logo.png" alt=""></a>
                         </div>
-                        <div class="col-6">
+                        <div class="col-lg-6 col-sm-6 col-2">
                             <nav >
                                 <ul class="menu">
                                     <li class="menu_item"><a href="#" class="menu_link">Услуги</a></li>
@@ -30,7 +30,7 @@
                                 </ul>               
                             </nav>
                         </div>
-                        <div class="col-5 number_block">
+                        <div class="col-lg-5 col-sm-5 col-8 number_block">
                             <a href="tel:89514991153" class="subheader_phone">8(863)-243-15-10</a>
                             <div class="subheader_call">Ростов-на-Дону</button>
                         </div>

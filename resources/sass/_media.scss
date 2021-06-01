@@ -1,7 +1,7 @@
 @media ( max-width: 767px ){
     header{
       img{
-        margin-left: 75px;
+        margin-left: 70px;
       }
     }
     .menu{
@@ -10,11 +10,11 @@
     .subheader_phone{
       padding-right: 30px;
       font-weight: 900;
-      font-size: 19px;
+      font-size: 16px;
     }
     .subheader_call{
       padding-right: 30px;
-      font-size: 16px;
+      font-size: 13px;
     }
     .footer{
       &_subheader{
@@ -39,10 +39,11 @@
     display: none;
       }     
     .hamburger{
+      position: fixed ;
       display: block;
       position: absolute;
       left: 15px;
-      top: 50%;
+      top: 43%;
       transform: translateY(-50%);
       width: 48px;
       height: 20px;
@@ -68,5 +69,29 @@
               }
       }
     }
+  }
+  .title_left{
+    font-size: 30px;
+    text-align: center;
+  }
+  .feed-form{
+    flex-direction: column;
+    align-items: center;
+  }
+  .consultation__descr {
+    text-align:center;
+  }
+  .button{
+    &_submit{
+      height: 51px;
+      width: 217px;
+      font-size: 14px;
+      font-weight: 300; 
+      margin-left: 0;
+    }
+  }
+  .news {
+    margin-top: 20px;
+    max-height: 420px;
   }
 }

@@ -1,17 +1,24 @@
 <template>
-    <div class="wrapper">
-        <div v-if="flagError">
-            <b-alert show variant="danger" class=error__block>Соединение с бд не установлено!</b-alert>   
-        </div>
+    <div v-if="flagError" class="wrapper">
         <div class="redCube"></div>
         <div class="fioCube"></div>
         <div class="slider_wrapper">
-            <slither-slider ref="slider" :options="options">
+            <slither-slider ref="slider" :options="{
+                    dots: true,
+                    controls: false,
+                    numberOfSlides: [
+                        { number: 1, min: 0 },
+                        { number: 2, min: 778 },
+                        { number: 3, min: 1100 },
+                    ]}">
                 <custom-component v-for="item_data in slider_data" :key="item_data.id">
                     <sliderItem :item_data="item_data"></sliderItem>
                 </custom-component>
             </slither-slider>
         </div>
+    </div>
+    <div v-else>
+        <b-alert show variant="danger" class=error__block>Соединение с бд не установлено!</b-alert>   
     </div>
 </template>
 
@@ -23,38 +30,8 @@ export default {
     data(){
         return{
             slider_data:[],
-            flagError: false,
-            options:{
-                autoplay: false,
-                transition: "slide",
-                dots: true,
-                animatedDots: false,
-                dotLimit: false,
-                fullscreen: false,
-                fullscreenOffset: null,
-                controls: false,
-                numberOfSlides: 3,
-                controlsWrapperClass: null,
-                animationDuration: 500,
-                animationEasing: "easeOutQuint",
-                slidePosition: "center",
-                slideClass: null,
-                sliderClass: null,
-                secondsOnSlide: 4,
-                clickableSlides: false,
-                endless: false,
-                cuts: "right",
-                gap: 30,
-                adaptiveHeight: false,
-                loop: true,
-                extras: 3,
-                overflowHiddenPadding: { top: 0, left: 0, right: 0, bottom: 0 },
-                touch: true,
-                preserveGrid: false,
-                swipeTolerance: 80
-                }
-            
-        }
+            flagError: true,
+            }
     },
     mounted(){
         this.update();
@@ -64,12 +41,12 @@ export default {
             try{
             const response = await axios.get('/getNews')  
                 this.slider_data = response.data;
-                this.flagError = false;
+                this.flagError = true;
                 }
                 catch{
-                    this.flagError = true;
+                    this.flagError = false;
                 }                
-        }
+        },
     }
 }
 </script>
@@ -117,5 +94,24 @@ export default {
     margin-top: 30px;
     text-align: center;
     font-weight: 600;
+}
+@media ( max-width: 1199px ){
+    .fioCube{
+        display: none;
+    }
+    .redCube{
+        display: none;
+    }
+}
+@media ( max-width: 767px ){
+    .slider_wrapper{
+        margin: 0 auto;
+        width: 377px;
+    }
+}
+@media ( max-width: 375px ){
+    .slider_wrapper{
+        width: 350px;
+    }
 }
 </style>

@@ -9,8 +9,8 @@ header{
     height: 50px;
   }
   .hamburger{
-      display: none;
-      z-index: 6;
+    display: none;
+    z-index: 6;
   }
   .menu{
     display: flex;
@@ -23,7 +23,7 @@ header{
     z-index: 5;
   }
   .menu_link{
-      color: #2B2B2B;
+    color: #2B2B2B;
     font-weight: normal;
     font-size: 16px;
     line-height: 18px;
@@ -34,14 +34,14 @@ header{
       }
   }
   .menu_item{
-      padding-right: 28px;
+    padding-right: 28px;
   }
   .number_block{
-      padding-top: 19px;
-      font-size: 16px;
-      line-height: 18px;
-      text-align: right;
-      flex-direction: column;
+    padding-top: 19px;
+    font-size: 16px;
+    line-height: 18px;
+    text-align: right;
+    flex-direction: column;
   }
   .subheader_call{
     color: #2B2B2B;
@@ -51,10 +51,10 @@ header{
     line-height: 16px;
   }
   .subheader_phone{
-      display: block;
-      color: #2B2B2B;
-      text-transform: uppercase;
-      font-weight: bold;
+    display: block;
+    color: #2B2B2B;
+    text-transform: uppercase;
+    font-weight: 900;
     font-size: 16px;
     line-height: 18px;
     text-decoration: none; 
