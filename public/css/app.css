@@ -36,6 +36,7 @@ nav {
 }
 .menu_link:hover {
   color: red;
+  text-decoration: none;
 }
 
 .menu_item {
@@ -240,6 +241,7 @@ footer a:hover {
 }
 .footer_links a:hover {
   color: red;
+  text-decoration: none;
 }
 .footer_links a:first-child {
   margin-left: 0px;

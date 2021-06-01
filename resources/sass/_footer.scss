@@ -38,7 +38,8 @@ footer{
       line-height: 18px;
       text-decoration: none; 
       &:hover{ 
-        color:red
+        color:red;
+        text-decoration: none; 
         }
       &:first-child{
 		    margin-left: 0px;
