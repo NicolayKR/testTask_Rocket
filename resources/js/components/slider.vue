@@ -74,16 +74,16 @@ export default {
 
 }
 .redCube{
-    height: 243px;
-    width: 349px;
+    max-height: 243px;
+    max-width: 349px;
     background-color: #D51522;
     position: absolute;
     top: 48px;
     z-index: -2;
 }
 .fioCube{
-    height: 243px;
-    width: 349px;
+    max-height: 243px;
+    max-width: 349px;
     background-color: #6F61A0;;
     position: absolute;
     top: 76px;

@@ -606,7 +606,7 @@ footer a:hover {
 }
 
 footer {
-  height: 163px;
+  min-height: 163px;
   background-color: #211F2B;
 }
 footer a:hover {
