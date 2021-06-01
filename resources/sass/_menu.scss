@@ -101,7 +101,6 @@ header{
     }
     &_active{
         right: 0;
-        overflow: hidden;
     }
     &_item{
         padding-right: 0;
@@ -113,6 +112,7 @@ header{
         color:black;
         line-height: 60px;
         text-decoration: none;
+        font-weight: 400;
         &:hover{
           color: red;
         }
