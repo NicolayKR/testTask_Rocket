@@ -126,6 +126,7 @@ nav {
 }
 .menu-2_link:hover {
   color: red;
+  text-decoration: none;
 }
 
 .title {
