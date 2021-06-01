@@ -4,12 +4,6 @@
         margin-left: 75px;
       }
     }
-    .xs-hidden{
-          display: block;
-    }
-      .xs-visible{
-          display: none;
-    }
     .menu{
         display: none;
     }
@@ -39,11 +33,11 @@
       }
     }
     .xs-hidden{
-    display: none
+      display: block;
       }
     .xs-visible{
-    display: block
-      }
+    display: none;
+      }     
     .hamburger{
       display: block;
       position: absolute;
