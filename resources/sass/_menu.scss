@@ -21,20 +21,20 @@ header{
     margin: 0;
     list-style-type: none;
     z-index: 5;
-  }
-  .menu_link{
-    color: #2B2B2B;
-    font-weight: normal;
-    font-size: 16px;
-    line-height: 18px;
-    text-decoration: none; 
-    &:hover{ 
-      color:red;
+    &_link{
+      color: #2B2B2B;
+      font-weight: normal;
+      font-size: 16px;
+      line-height: 18px;
       text-decoration: none; 
+      &:hover{ 
+        color:red;
+        text-decoration: none; 
+        }
       }
-  }
-  .menu_item{
-    padding-right: 28px;
+    &_item{
+      padding-right: 28px;
+    }
   }
   .number_block{
     padding-top: 19px;
@@ -43,24 +43,26 @@ header{
     text-align: right;
     flex-direction: column;
   }
-  .subheader_call{
-    color: #2B2B2B;
-    margin-top: 5px;
-    font-weight: normal;
-    font-size: 14px;
-    line-height: 16px;
-  }
-  .subheader_phone{
-    display: block;
-    color: #2B2B2B;
-    text-transform: uppercase;
-    font-weight: 900;
-    font-size: 16px;
-    line-height: 18px;
-    text-decoration: none; 
-    &:hover{ 
-      color:red
-      }
+  .subheader{
+    &_call{
+      color: #2B2B2B;
+      margin-top: 5px;
+      font-weight: normal;
+      font-size: 14px;
+      line-height: 16px;
+    }
+    &_phone{
+      display: block;
+      color: #2B2B2B;
+      text-transform: uppercase;
+      font-weight: 900;
+      font-size: 16px;
+      line-height: 18px;
+      text-decoration: none; 
+      &:hover{ 
+        color:red
+        }
+    }
   }
   .menu-2{
     position: fixed ;
@@ -74,28 +76,6 @@ header{
     align-items: center;
     transition: 0.7s all;
     z-index: 5;
-    &_footer{
-      background-color: black;
-      width: 100vw;
-      height: 53vh;
-        &_subheader{
-          padding-top: 36px;
-          font-weight: 400;
-          font-size: 20px;
-          line-height: 18px;
-          color:white;
-          padding-left: 20px;
-        }
-        &_phone{
-          margin-top: 25px;
-          font-weight: 900;
-          font-size: 24px;
-          line-height: 23px;
-          color:white;
-          padding-left: 20px;
-          
-        }
-    }
     &-ul{
       padding: 110px 20px;
       list-style-type:none;
@@ -117,6 +97,28 @@ header{
         &:hover{
           color: red;
           text-decoration: none;
+        }
+      }
+    &_footer{
+      background-color: black;
+      width: 100vw;
+      height: 53vh;
+        &_subheader{
+          padding-top: 36px;
+          font-weight: 400;
+          font-size: 20px;
+          line-height: 18px;
+          color:white;
+          padding-left: 20px;
+        }
+        &_phone{
+          margin-top: 25px;
+          font-weight: 900;
+          font-size: 24px;
+          line-height: 23px;
+          color:white;
+          padding-left: 20px;
+          
         }
     }
   }

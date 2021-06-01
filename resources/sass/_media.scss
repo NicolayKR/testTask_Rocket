@@ -16,6 +16,30 @@
       padding-right: 30px;
       font-size: 13px;
     }
+    .title_left{
+      font-size: 30px;
+      text-align: center;
+    }
+    .feed-form{
+      flex-direction: column;
+      align-items: center;
+    }
+    .consultation__descr {
+      text-align:center;
+    }
+    .button{
+      &_submit{
+        height: 51px;
+        width: 217px;
+        font-size: 14px;
+        font-weight: 300; 
+        margin-left: 0;
+      }
+    }
+    .news {
+      margin-top: 20px;
+      max-height: 420px;
+    }
     .footer{
       &_subheader{
         padding-top: 36px;
@@ -39,7 +63,6 @@
     display: none;
       }     
     .hamburger{
-      position: fixed ;
       display: block;
       position: absolute;
       left: 15px;
@@ -70,28 +93,29 @@
       }
     }
   }
-  .title_left{
-    font-size: 30px;
-    text-align: center;
-  }
-  .feed-form{
-    flex-direction: column;
-    align-items: center;
-  }
-  .consultation__descr {
-    text-align:center;
-  }
-  .button{
-    &_submit{
-      height: 51px;
-      width: 217px;
-      font-size: 14px;
-      font-weight: 300; 
-      margin-left: 0;
+}
+@media ( max-width: 320px ){
+  header{
+    img{
+      margin-left: 50px;
     }
   }
-  .news {
-    margin-top: 20px;
-    max-height: 420px;
+  .subheader{
+    &_phone {
+    padding-right:10px;
+    }
+    &_call {
+      padding-right:10px;
+      }
+  }
+  .menu-2{
+    &_footer{
+      &_phone{
+      margin-top: 5px;
+      }
+      &_subheader{
+        padding-top: 25px;
+      }
+    }
   }
 }
