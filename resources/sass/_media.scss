@@ -10,8 +10,8 @@
       .xs-visible{
           display: none;
     }
-      .menu{
-          display: none;
+    .menu{
+        display: none;
     }
     .subheader_phone{
       padding-right: 30px;
@@ -36,45 +36,43 @@
         font-size: 20px;
         line-height: 23px;
         color:white;
-        
       }
-    }
-    .hamburger{
-    display: block;
-    position: absolute;
-    left: 15px;
-    top: 50%;
-    transform: translateY(-50%);
-    width: 48px;
-    height: 20px;
-    span{
-        display: block;
-        height: 6px;
-        width: 100%;
-        background-color: red;
-        margin-bottom: 6px;
-        transition: 0.5s all;
-    }
-    &_active{
-        span{
-            margin-bottom: -6px;
-            &:nth-child(1){
-                transform: translateY(3px) rotate(-45deg);
-            }
-            &:nth-child(2){
-                display: none;
-            }
-            &:nth-child(3){
-                transform: translateY(3px) rotate(45deg);
-            }
-    }
     }
     .xs-hidden{
     display: none
-    }
+      }
     .xs-visible{
     display: block
+      }
+    .hamburger{
+      display: block;
+      position: absolute;
+      left: 15px;
+      top: 50%;
+      transform: translateY(-50%);
+      width: 48px;
+      height: 20px;
+      span{
+          display: block;
+          height: 6px;
+          width: 100%;
+          background-color: red;
+          margin-bottom: 6px;
+          transition: 0.5s all;
+      }
+      &_active{
+          span{
+              margin-bottom: -6px;
+              &:nth-child(1){
+                  transform: translateY(3px) rotate(-45deg);
+              }
+              &:nth-child(2){
+                  display: none;
+              }
+              &:nth-child(3){
+                  transform: translateY(3px) rotate(45deg);
+              }
+      }
     }
-    }
-
+  }
 }

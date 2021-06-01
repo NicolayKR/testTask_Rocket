@@ -287,6 +287,14 @@ footer a:hover {
     color: white;
   }
 
+  .xs-hidden {
+    display: none;
+  }
+
+  .xs-visible {
+    display: block;
+  }
+
   .hamburger {
     display: block;
     position: absolute;
@@ -315,12 +323,6 @@ footer a:hover {
   }
   .hamburger_active span:nth-child(3) {
     transform: translateY(3px) rotate(45deg);
-  }
-  .hamburger .xs-hidden {
-    display: none;
-  }
-  .hamburger .xs-visible {
-    display: block;
   }
 }
 /* Slider */

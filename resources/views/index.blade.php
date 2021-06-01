@@ -28,11 +28,6 @@
                                     <li class="menu_item"><a href="#" class="menu_link">Вакансии</a></li>
                                     <li class="menu_item"><a href="#" class="menu_link">Контакты</a></li>
                                 </ul>               
-                                <div class="hamburger">
-                                    <span></span>
-                                    <span></span>
-                                    <span></span>
-                                </div>
                             </nav>
                         </div>
                         <div class="col-5 number_block">
@@ -40,6 +35,11 @@
                             <div class="subheader_call">Ростов-на-Дону</button>
                         </div>
                     </div>
+                </div>
+                <div class="hamburger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
                 </div>
             </header>
             <section class="consultation">
