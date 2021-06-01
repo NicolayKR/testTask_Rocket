@@ -52,7 +52,6 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-
 .wrapper{
     position: relative;
 }
@@ -74,16 +73,18 @@ export default {
 
 }
 .redCube{
-    max-height: 243px;
-    max-width: 349px;
+    display: block;
+    height: 243px;
+    width: 349px;
     background-color: #D51522;
     position: absolute;
     top: 48px;
     z-index: -2;
 }
 .fioCube{
-    max-height: 243px;
-    max-width: 349px;
+    display: block;
+    height: 243px;
+    width: 349px;
     background-color: #6F61A0;;
     position: absolute;
     top: 76px;
