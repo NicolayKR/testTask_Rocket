@@ -75,13 +75,15 @@ export default {
 }
 @media ( max-width: 990px ){
     .item_wrapp{
-        width: 316px;
+        max-width: 316px;
+        margin: 0 auto;
     }
 }
 @media ( max-width: 375px ){
     .item_wrapp{
-        width: 300px;
+        max-width: 300px;
         min-height: 243;
+        margin: 0 auto;
     }
 }
 </style>

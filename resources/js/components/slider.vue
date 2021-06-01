@@ -106,7 +106,7 @@ export default {
 @media ( max-width: 767px ){
     .slider_wrapper{
         margin: 0 auto;
-        width: 377px;
+        max-width: 377px;
     }
 }
 </style>
