@@ -110,7 +110,7 @@ export default {
     background-color: #6F61A0;;
     position: absolute;
     top: 76px;
-    right: 0;
+    right: -3px;
     z-index: -2;
 }
 .error__block{
