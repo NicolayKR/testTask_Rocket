@@ -195,6 +195,7 @@ nav {
 }
 
 .news {
+  min-height: 320px;
   max-height: 533px;
   margin-top: 90px;
 }
