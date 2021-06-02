@@ -1,5 +1,5 @@
 footer{
-	min-height: 163px;
+	max-height: 163px;
   background-color: #211F2B;
   margin-bottom: 0px;
 	a{
@@ -14,8 +14,7 @@ footer{
 		align-items: center;
     img{
       position: absolute;
-      margin-top: 32px;
-      margin-bottom: 48px;
+      margin-top: 40px;
     }
   }
   &_subheader{
@@ -46,3 +45,9 @@ footer{
     }
   }
 }
+.xs-hidden{
+  display: none;
+  }
+.xs-visible{
+  display: block;
+} 

@@ -103,6 +103,12 @@ header{
       background-color: black;
       width: 100vw;
       height: 53vh;
+      .xs-hidden{
+        display: block;
+        }
+      .xs-visible{
+        display: none;
+      } 
         &_subheader{
           padding-top: 36px;
           font-weight: 400;

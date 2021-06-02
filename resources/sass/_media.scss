@@ -1,3 +1,18 @@
+@media ( max-width: 990px ){
+  .menu{
+    padding-left: 24px;
+  }
+  .footer{
+    &_links{
+      width: 502px;
+      margin: 0 auto;
+      text-align: right;
+      a{
+        font-size: 16px;
+      }
+    }
+  }
+}
 @media ( max-width: 767px ){
     header{
       img{

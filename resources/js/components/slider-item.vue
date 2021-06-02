@@ -78,6 +78,7 @@ export default {
     .item_wrapp{
         max-width: 316px;
         margin: 0 auto;
+        
     }
 }
 @media ( max-width: 375px ){
