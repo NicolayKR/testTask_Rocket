@@ -8,7 +8,7 @@ use App\Models\News;
 class NewsController extends Controller
 {
     public function getNews(){
-        $result = News::selectRaw('description_newss, date_news')->get();         
+        $result = News::selectRaw('description_news, date_news')->get();         
         return $result;  
     }
 }
