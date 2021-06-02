@@ -92,7 +92,7 @@ export default {
     z-index: -2;
 }
 .error__block{
-    margin-top: 40px;
+    margin-top: 100px;
     text-align: center;
     font-weight: 600;
 }
